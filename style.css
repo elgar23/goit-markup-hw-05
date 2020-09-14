@@ -508,7 +508,7 @@ a {
 }
 .current-link::after {
   display: block;
-  bottom: 77%;
+  bottom: 87%;
   content: "";
   width: 48px;
   height: 4px;
@@ -534,6 +534,7 @@ a {
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 /* Кнопки фильтры на стр. Портфолио */
@@ -576,7 +577,7 @@ a {
 }
 
 .prtfl-current-link::after {
-  bottom: 74%;
+  bottom: 85%;
   content: "";
   width: 78px;
   height: 4px;
@@ -987,8 +988,9 @@ h5 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50% -50%) scale(1);
-  width: 100%;
+
+  transform: translate(-50%, -50%) rotate(360deg) scale(1);
+  transition-duration: 1s;
   min-width: 528px;
   min-height: 581px;
   background: var(--main-color);
@@ -997,14 +999,18 @@ h5 {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   opacity: 1;
-  transition: opacity 250ms var(--timing) 0s, transform 250ms var(--timing) 0s;
 }
+
 .btn {
   position: absolute;
-  top: auto;
-  right: 30%;
+  top: 1%;
+  right: 1%;
   padding: 0;
   border: none;
-  position: absolute;
   background-color: var(--main-color);
+  width: 30px;
+  height: 30px;
+}
+.btn:focus {
+  outline: none;
 }
