@@ -25,9 +25,6 @@
           </a>
           <ul class="list text-nav nav-list">
             <li class="nav-item">
-              <!--<svg class="icon-line">
-                <use xlink:href="./hw5/spritehw5.svg#hover"></use>
-              </svg>-->
               <a href="./index.html" class="current-link">Студия</a>
             </li>
             <li class="nav-item">
@@ -396,10 +393,56 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form">
+          <p class="footer-text">Подпишитесь на рассылку</p>
+          <form action="subscribe-form"></form>
+          <input
+            class="footer-input"
+            type="email"
+            name=""
+            placeholder="E-mail"
+          />
+          <button class="footer-btn-form">
+            Подписаться
+            <svg class="icon-send">
+              <use xlink:href="./form/sprite.svg#send"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <p>Оставьте свои данные, мы вам перезвоним</p>
+        <form class="modal-form">
+          <div class="form-field"></div>
+          <label for="name"></label>
+          <input type="text" name="name" id="name" />
+          <div class="form-field"></div>
+          <label for="tel"></label>
+          <input type="tel" name="tel" id="tel" />
+          <div class="form-field"></div>
+          <label for="mail"></label>
+          <input type="email" name="mail" id="mail" />
+          <div class="form-field"></div>
+          <label for="comment"></label>
+          <div class="form-field"></div>
+          <textarea
+            name=""
+            id=""
+            rows="6"
+            placeholder="Введите текст"
+          ></textarea>
+          <div class="form-field"></div>
+          <input type="checkbox" name="" value="contract" id="contract" />
+          <label for="contract"
+            >Соглашаюсь с рассылкой и принимаю <span>Условия договора</span>
+          </label>
+          <div>
+            <button type="submit">Отправить</button>
+          </div>
+        </form>
+
         <button class="btn" data-modal-close>
           <svg class="modal-icon">
             <use href="./modal/sprite.svg#close"></use>
